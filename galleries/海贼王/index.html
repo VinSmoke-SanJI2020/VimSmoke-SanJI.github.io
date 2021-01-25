@@ -6,7 +6,7 @@
 
 
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux">
+    <meta name="keywords" content="海贼王, Linux">
     <meta name="description" content="专注Linux，分析生活，分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>麦西guaの博客</title>
+    <title>海贼王 | 麦西guaの博客</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/VinSmoke-SanJI2020/cdn/font/myFont.ttf/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/VinSmoke-SanJI2020/cdn/font/myFont.ttf/libs/awesome/css/all.css">
@@ -361,379 +361,55 @@
 
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
+    <link rel="stylesheet" href="/css/gallery.css">
+<link type="text/css" href="/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link type="text/css" href="/libs/justifiedGallery/justifiedGallery.min.css" rel="stylesheet">
 
 
 
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align ">
-                
-                越努力，越幸运！
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "永不言弃，成功者不放弃，放弃者不成功",
-                            
-                                "You can never quit. Winners never quit, and quitters never win.",
-                            
-                                "改变人生只能靠自己，别人无法代劳。",
-                            
-                                "Only I can change my life. No one can do it for me",
-                            
-                                "你要坚持自己的梦想。",
-                            
-                                "You gotta stay focused on your dream",
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途。",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                                "人生不过一场梦。",
-                            
-                                "Life is but a dream",
-                            
-                                "爱会治愈你，会治愈我们所有人。",
-                            
-                                "It is love that will heal you. It is what heals us all",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "https://cdn.jsdelivr.net/gh/VinSmoke-SanJI2020/cdn/font/myFont.ttf/medias/banner/" + new Date().getDay() + '.webp';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github "></i>Fork Me
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:970399743@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=970399743" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 970399743" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
-
-<main class="content">
-
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
-        </div>
-    </div>
-</div>
-
-                    
-
-                    
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/VinSmoke-SanJI2020/cdn/font/myFont.ttf/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="music-player">
-    
-        <div class="title center-align">
-            <i class="fas fa-music"></i>&nbsp;&nbsp;麦西guaの音乐
-        </div>
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="331788618"
-                   fixed='false'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/gh/VinSmoke-SanJI2020/cdn/font/myFont.ttf/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-                        
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/VinSmoke-SanJI2020/cdn/font/myFont.ttf/medias/featureimages/5.webp')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">海贼王</h1>
                 </div>
             </div>
         </div>
     </div>
-    
+</div>
 
-    
 
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/undefined.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/VinSmoke-SanJI2020/cdn/font/myFont.ttf/medias/featureimages/0.webp" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-23
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                麦锡华
-                                
-                            </span>
-                        </div>
-                    </div>
+<div class="container">
+    <div class="photo-wrapper">
+        
 
-                    
+            <script src="/js/crypto-js.js"></script>
+            <script src="/js/gallery-encrypt.js"></script>
+            <div id="hbe-security">
+                <div class="hbe-input-container">
+                    <input type="password" class="hbe-form-control" id="pass"  placeholder="请输入密码查看内容"/>
+                    <a href="javascript:;" class="btn-decrypt" id="btn_decrypt">解密</a>
                 </div>
             </div>
-            
-        </div>
-    </article>
+            <div  id="mygallery">
+                <div class="waterfall" id="encrypt-blog" style="display:none">
+                    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
+                </div>
+            </div>
+        
+    </div>
+</div>
 
-</main>
+<script src="/libs/fancybox/fancybox.js"></script>
+<script src="/libs/justifiedGallery/justifiedGallery.min.js"></script>
+<script>
 
+  $("a[rel=example_group]").fancybox();
+  $("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});
 
-
+</script>
 
     <footer class="page-footer bg-color">
     
