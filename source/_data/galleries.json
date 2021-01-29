@@ -1,0 +1,25 @@
+[
+  {
+    "name": "海贼王",
+    "cover": "IMAGES/avatar.jpg",
+    "description": "我的图床",
+    "photos": [
+      "IMAGES/0.webp",
+      "IMAGES/1.webp",
+      "IMAGES/2.webp",
+      "IMAGES/3.webp",
+      "IMAGES/4.webp",
+      "IMAGES/5.webp",
+      "IMAGES/6.webp",
+      "IMAGES/7.webp",
+      "IMAGES/8.webp",
+      "IMAGES/logo1.png",
+      "IMAGES/node-11.png",
+      "IMAGES/node-12.png",
+      "IMAGES/01.gif",
+      "IMAGES/02.gif",
+      "IMAGES/03.gif",
+      "IMAGES/04.gif"
+    ]
+  }
+]
