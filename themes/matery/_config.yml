@@ -21,8 +21,8 @@ menu:
         url: /galleries 
         icon: fas fa-image
       - name: 说说
-        url: /artitalk
-        icon: fas fa-comment faa-bounce animated-hover
+        url: /Artitalk
+        icon: fas fa-comments
   Contact:
     url: /contact
     icon: fas fa-comments
@@ -135,12 +135,6 @@ logo: /medias/logo.jpeg
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 
-# 注释不要着按钮
-#indexbtn:
-# enable: false
-# name: Github
-# icon: fab fa-github-alt
-# url: https://github.com/blinkfox/hexo-theme-matery
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -411,6 +405,9 @@ googleAnalytics:
   enable: false
   id:
 
+
+
+
 # Add baidu analytics configuration
 # 添加 baidu Analytics 配置
 baiduAnalytics:
@@ -439,6 +436,8 @@ libs:
     jqcloud: /libs/jqcloud/jqcloud.css
     tocbot: /libs/tocbot/tocbot.css
     prism: /libs/prism/prism.css
+    artitalk: /libs/artitalk/artitalk.min.css
+    
   js:
     matery: /js/matery.js
     jquery: /libs/jquery/jquery.min.js
@@ -464,6 +463,7 @@ libs:
     ribbonRefresh: /libs/background/ribbon-refresh.min.js
     ribbon_dynamic: /libs/background/ribbon-dynamic.js
     instantpage: /libs/instantpage/instantpage.js
+    artitalk: /libs/artitalk/artitalk.min.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
@@ -609,10 +609,21 @@ background:
   url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg"
 
 # 说说 https://artitalk.js.org/
-artitalk:
-  enable: true
-  appId: 1F6PKPsJdKWTlfheiT8gEKmz-MdYXbMMI 
+
+artitalk: 
+  appId: 1F6PKPsJdKWTlfheiT8gEKmz-MdYXbMMI
   appKey: jUA2DiJwzE3MLmhEXaffYqIW
+  serverURL:   #leancloud绑定的安全域名，使用国际版的话不需要填写
+  lang: zh # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
+  pageSize: 10  #每页说说的显示数量
+  # shuoPla: #在编辑说说的输入框中的占位符
+  avatarPla: https://cdn.jsdelivr.net/gh/small-rose/small-rose.github.io/medias/avatar.jpg #自定义头像url的输入框的占位符
+  # motion: #加载动画的开关，1为开，0为关，默认为开
+  # bgImg: #说说输入框背景图片url
+  # color1: #说说背景颜色1&按钮颜色1
+  # color2: #说说背景颜色2&按钮颜色2
+  # color3: #说说字体颜色
+
 
 # 哔哔功能配置
 # 登陆leancloud创建应用。进入应用后，点击创建 Class，将「 Class 名称」命名为 content

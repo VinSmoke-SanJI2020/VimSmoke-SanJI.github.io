@@ -63,6 +63,7 @@
 
 <head>
 
+    <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.artitalk) %>">
 
     <meta charset="utf-8">
     <meta name="keywords" content="<%= keyWords %>">
@@ -89,5 +90,9 @@
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.jquery) %>"></script>
 
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+   <!--说说引入css-->
+    <link rel="stylesheet" type="text/css" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.artitalk) %>">
+
+    
 
 </head>

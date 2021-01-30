@@ -1,0 +1,61 @@
+<%- partial('_partial/bg-cover') %>
+
+<style ype="text/css">
+
+  #pubShuo {
+  
+    margin-right: 5px;
+  }
+  
+  #operare_artitalk .shuoshuo_input_log {
+      outline-style: none;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-size: 12px;
+      background-color: transparent;
+  
+      color: #0bb7fbd6;
+      width: 70%;
+      height: 28px;
+      margin-left: 10px;
+  }
+  
+  #artitalk_main {
+  
+    margin-top: 5px ;
+    margin-left: 5%;
+    margin-right: 5%;
+  
+  }
+  
+  #lazy{
+    margin-top: 40px;
+  }
+  
+  </style>
+  
+
+<script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.artitalk) %>"></script>
+
+<article id="articles11" class="container  chip-container">
+  <div class="row ">
+
+      <div class=" card">
+        <div class="card-content" >
+          <div class="tag-title center-align">
+                <i class="fas fa-pen-alt"></i> 说说
+           </div>
+
+          <div id="artitalk_main"></div>
+        </div>  
+      </div>
+
+  </div>
+</article>
+
+
+
+
+    

@@ -71,7 +71,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 18
+  per_page: 12
   order_by: -date
 
 # Category & Tag
@@ -118,7 +118,6 @@ deploy:
         # 同时部署到github和gitee
         #coding: git@git.coding.net:AshinWang/AshinWang.coding.me.git 
   branch: master
-
 
 
 #看板娘
