@@ -1,12 +1,4 @@
-/* Here is your custom css styles. */
-@font-face{
-    font-family: 'myFont';
-    src: url('../font/myFont.ttf');
-}
 
-body{
-    font-family: 'myFont';
-}
 /*美化超链接*/
 .dt-p {
     background-color: white;
